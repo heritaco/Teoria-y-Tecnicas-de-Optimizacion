@@ -4,7 +4,7 @@ from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 import numpy as np
 
-stocks = ['AAPL', 'MSFT', 'MA', 'V', 'WMT', 'PG', 'JNJ', 'UNH', 'T', 'VZ', 'KO', 'PEP', 'DIS', 'CMCSA', 'NFLX', 'AMZN', 'GOOGL', 'TSLA', 'NVDA']
+stocks = ['SPCE', 'SAVA', 'RIOT', 'TSLA', 'AMD', 'ON']
 
 data = yf.download(stocks, start='2019-01-01', end='2024-01-01')
 
@@ -84,4 +84,4 @@ ws3['I15'] = 0
 ws3.cell(row=10, column=7, value=f"=SUMPRODUCT(B8:{chr(65+len(stocks))}8, B4:{chr(65+len(stocks))}4)+ {chr(66+len(stocks))}8* C14")
 
 wb.remove(wb['Sheet'])
-wb.save('opti.xlsx')
+wb.save('opti2.xlsx')
