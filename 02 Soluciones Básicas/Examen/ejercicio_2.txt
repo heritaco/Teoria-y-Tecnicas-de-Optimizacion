@@ -1,0 +1,35 @@
+n:2
+m:4
+t_r:[2 2 2 2]
+t_p:1
+
+c:[3000 2000]
+
+A:[1 2
+2 1
+-1 1
+0 1]
+
+b:[6 8 1 2]
+
+
+Z
+
+n el número de variables del problema 
+
+m el número de restricciones del problema
+
+t_r 
+	0 si la restriccion es del tipo =
+	1 si la restriccion es del tipo >=
+	2 si la restricción es del tipo <= 
+
+t_p
+	1 si el problema es de maximización
+	2 si el problema es de minimización
+
+c es el vector de coeficientes de la función objetivo
+
+A es la matriz de coeficientes de las restricciones 
+
+b es el vector de coeficientes del lado derecho de las restricciones  
